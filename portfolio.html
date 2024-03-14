@@ -28,11 +28,26 @@
             <li><a href="" class="link">Contacts</a></li>
           </ul>
         </nav>
-
+        svg
         <!-- Contacts -->
         <ul class="contacts-nav list flex">
-          <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+          <li>
+            <a href="mailto:info@devstudio.com" class="link flex">
+              <svg class="contacts-icon">
+                <use href="./Images/svg-icons/symbol-defs.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+
+          <li>
+            <a href="tel:+380961111111" class="link flex">
+              <svg class="contacts-icon">
+                <use href="./Images/svg-icons/symbol-defs.svg#icon-phone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
         </ul>
       </div>
     </header>
@@ -133,25 +148,71 @@
       </div>
     </main>
 
+  
+
     <!-- footer -->
     <footer class="footer">
       <div class="container">
-        <a href="/" class="footer-logo link"><span class="logo-blue">Web</span>Studio</a>
-        <ul class="list">
-          <li>
-            <a
-              href="https://www.google.com/maps/search/?api=1&query=м. Київ, пр-т Лесі Українки, 26"
-              class="link adress"
-              >м. Київ, пр-т Лесі Українки, 26</a
-            >
-          </li>
-          <li>
-            <a href="mailto:info@devstudio.com" class="link contact">info@devstudio.com</a>
-          </li>
-          <li>
-            <a href="tel:+380961111111" class="link contact">+38 096 111 11 11</a>
-          </li>
-        </ul>
+        <div class="footer-contact">
+          <a href="/" class="footer-logo link"><span class="logo-blue">Web</span>Studio</a>
+          <ul class="list">
+            <li class="footer-list">
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=м. Київ, пр-т Лесі Українки, 26"
+                class="link adress"
+                >м. Київ, пр-т Лесі Українки, 26</a
+              >
+            </li>
+            <li class="footer-list">
+              <a href="mailto:info@devstudio.com" class="link contact">info@devstudio.com</a>
+            </li>
+            <li class="footer-list">
+              <a href="tel:+380961111111" class="link contact">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="join">
+          <p class="join-tittle">JOIN US</p>
+          <ul class="list flex">
+            <li class="join-list">
+              <a href="">
+                <button class="button">
+                  <svg class="button-icon" width="20px" height="20px">
+                    <use href="./Images/svg-icons/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </button>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <button class="button">
+                  <svg class="button-icon" width="20px" height="20px">
+                    <use href="./Images/svg-icons/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </button>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <button class="button">
+                  <svg class="button-icon" width="20px" height="20px">
+                    <use href="./Images/svg-icons/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </button>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <button class="button">
+                  <svg class="button-icon" width="20px" height="20px">
+                    <use href="./Images/svg-icons/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </button>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>
