@@ -21,6 +21,7 @@
     <header>
       <div class="header container flex">
         <!-- Navigations -->
+
         <nav class="flex">
           <a href="/" class="header-logo link"><span class="logo-blue">Web</span>Studio</a>
           <ul class="menu-nav list flex">
@@ -62,9 +63,21 @@
             Effective solution <br />
             for your business
           </h1>
-          <button type="button" class="button">Order a service</button>
+          <button type="button" class="button" data-modal-open>Order a service</button>
         </div>
       </article>
+
+      <!-- backdrop -->
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button class="close-button" type="button" data-modal-close>
+            <svg width="30" height="30">
+              <use href="./Images/svg-icons/button-close.svg"></use>
+            </svg>
+          </button>
+        </div>
+        
+      </div>
 
       <!-- Features -->
       <section class="features">
@@ -115,13 +128,13 @@
             <li class="li-item">
               <a href="" class="link">
                 <img src="Images/box2.jpg" alt="Web designers" width="370" height="294" />
-              <p class="overlay-text">Mobile applications</p>
+                <p class="overlay-text">Mobile applications</p>
               </a>
             </li>
             <li class="li-item">
               <a href="" class="link">
                 <img src="Images/box3.jpg" alt="Creative" width="370" height="294" />
-              <p class="overlay-text">Design solutions</p>
+                <p class="overlay-text">Design solutions</p>
               </a>
             </li>
           </ul>
@@ -438,5 +451,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
